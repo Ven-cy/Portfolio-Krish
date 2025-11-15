@@ -1,0 +1,65 @@
+/* Layout CSS - Grid, Flexbox, and page structure */
+
+/* Hero container layout */
+.hero-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .hero-container {
+    grid-template-columns: 380px 1fr;
+  }
+}
+
+/* Profile photo wrapper */
+.profile-photo-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1200px;
+}
+
+/* Hero info section */
+.hero-info {
+  padding: 0 1rem;
+}
+
+/* Social cards layout */
+.social-cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Projects grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Project media container */
+@media (max-width: 1023px) {
+  .project-media-container {
+    order: 2;
+  }
+  .project-details {
+    order: 1;
+  }
+}
+
+.project-details {
+  position: relative;
+}

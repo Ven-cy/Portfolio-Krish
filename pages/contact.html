@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get in touch with Krish Kalola for collaborations, opportunities, or just to connect."
+    />
+    <title>Contact - Krish Kalola</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- Inter font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/theme.css" />
+    <link rel="stylesheet" href="/css/layout.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/animations.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100 font-sans"
+  >
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main class="pt-24">
+      <!-- Breadcrumb -->
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <nav class="flex" aria-label="Breadcrumb">
+          <ol class="inline-flex items-center space-x-1 md:space-x-3">
+            <li class="inline-flex items-center">
+              <a
+                href="/index.html"
+                class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400"
+              >
+                <i data-lucide="home" class="w-4 h-4 mr-2"></i>
+                Home
+              </a>
+            </li>
+            <li aria-current="page">
+              <div class="flex items-center">
+                <i
+                  data-lucide="chevron-right"
+                  class="w-4 h-4 text-gray-400"
+                ></i>
+                <span
+                  class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400"
+                  >Contact</span
+                >
+              </div>
+            </li>
+          </ol>
+        </nav>
+      </div>
+
+      <!-- Contact Section -->
+      <section class="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+          <!-- Header -->
+          <div class="text-center mb-12">
+            <h1
+              class="text-5xl md:text-6xl font-extrabold mb-4 bg-gradient-to-r from-primary-600 to-purple-600 dark:from-primary-400 dark:to-purple-400 bg-clip-text text-transparent"
+            >
+              Let's Connect
+            </h1>
+            <p
+              class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto"
+            >
+              Whether you have a project in mind, an opportunity to discuss, or
+              just want to say hi, I'd love to hear from you!
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <!-- Contact Form -->
+            <div class="glass-card p-8 md:p-10">
+              <div class="flex items-center gap-4 mb-6">
+                <div
+                  class="w-12 h-12 rounded-full bg-gradient-to-br from-primary-500 to-purple-600 flex items-center justify-center"
+                >
+                  <i data-lucide="send" class="w-6 h-6 text-white"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white">
+                  Send a Message
+                </h2>
+              </div>
+
+              <form id="contact-form" class="space-y-6">
+                <!-- Name -->
+                <div>
+                  <label
+                    for="name"
+                    class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
+                  >
+                    Your Name *
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    class="w-full px-4 py-3 rounded-xl bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                    placeholder="John Doe"
+                  />
+                  <span
+                    class="error-message hidden text-red-500 text-sm mt-1"
+                  ></span>
+                </div>
+
+                <!-- Email -->
+                <div>
+                  <label
+                    for="email"
+                    class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
+                  >
+                    Your Email *
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    class="w-full px-4 py-3 rounded-xl bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                    placeholder="john@example.com"
+                  />
+                  <span
+                    class="error-message hidden text-red-500 text-sm mt-1"
+                  ></span>
+                </div>
+
+                <!-- Subject -->
+                <div>
+                  <label
+                    for="subject"
+                    class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
+                  >
+                    Subject *
+                  </label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    required
+                    class="w-full px-4 py-3 rounded-xl bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                    placeholder="Project Collaboration"
+                  />
+                  <span
+                    class="error-message hidden text-red-500 text-sm mt-1"
+                  ></span>
+                </div>
+
+                <!-- Message -->
+                <div>
+                  <label
+                    for="message"
+                    class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
+                  >
+                    Message *
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    required
+                    class="w-full px-4 py-3 rounded-xl bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all resize-none"
+                    placeholder="Tell me about your project or how I can help..."
+                  ></textarea>
+                  <span
+                    class="error-message hidden text-red-500 text-sm mt-1"
+                  ></span>
+                </div>
+
+                <!-- Submit Button -->
+                <button
+                  type="submit"
+                  class="w-full px-6 py-3 bg-gradient-to-r from-primary-600 to-purple-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-primary-500/30 transition-all duration-300 hover:scale-[1.02] flex items-center justify-center gap-2"
+                >
+                  <i data-lucide="send" class="w-5 h-5"></i>
+                  <span>Send Message</span>
+                </button>
+
+                <!-- Success/Error Messages -->
+                <div
+                  id="form-success"
+                  class="hidden bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 text-green-700 dark:text-green-300 px-4 py-3 rounded-xl"
+                >
+                  <p class="font-semibold">Message sent successfully!</p>
+                  <p class="text-sm">
+                    I'll get back to you as soon as possible.
+                  </p>
+                </div>
+                <div
+                  id="form-error"
+                  class="hidden bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-300 px-4 py-3 rounded-xl"
+                >
+                  <p class="font-semibold">Something went wrong!</p>
+                  <p class="text-sm">
+                    Please try again or reach out via email directly.
+                  </p>
+                </div>
+              </form>
+            </div>
+
+            <!-- Contact Info & Social -->
+            <div class="space-y-8">
+              <!-- Direct Contact -->
+              <div class="glass-card p-8">
+                <h3
+                  class="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3"
+                >
+                  <i data-lucide="mail" class="w-6 h-6 text-primary-500"></i>
+                  Direct Contact
+                </h3>
+                <div class="space-y-4">
+                  <a
+                    href="mailto:krishkalola12@gmail.com"
+                    class="flex items-center gap-4 p-4 rounded-xl bg-gray-50 dark:bg-gray-800 hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-all group"
+                  >
+                    <div
+                      class="w-12 h-12 rounded-full bg-primary-100 dark:bg-primary-900/30 flex items-center justify-center group-hover:scale-110 transition-transform"
+                    >
+                      <i
+                        data-lucide="mail"
+                        class="w-6 h-6 text-primary-600 dark:text-primary-400"
+                      ></i>
+                    </div>
+                    <div>
+                      <p class="font-semibold text-gray-900 dark:text-white">
+                        Email
+                      </p>
+                      <p class="text-sm text-gray-600 dark:text-gray-400">
+                        krishkalola12@gmail.com
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Social Media -->
+              <div class="glass-card p-8">
+                <h3
+                  class="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3"
+                >
+                  <i data-lucide="share-2" class="w-6 h-6 text-primary-500"></i>
+                  Connect on Social
+                </h3>
+                <div class="space-y-3">
+                  <a
+                    href="https://www.linkedin.com/in/krish-kalola-3a3647259/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-contact-link linkedin"
+                  >
+                    <i data-lucide="linkedin" class="w-6 h-6"></i>
+                    <div>
+                      <p class="font-semibold">LinkedIn</p>
+                      <p class="text-sm opacity-80">Professional Network</p>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 ml-auto"></i>
+                  </a>
+                  <a
+                    href="https://github.com/krishkalola12"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-contact-link github"
+                  >
+                    <i data-lucide="github" class="w-6 h-6"></i>
+                    <div>
+                      <p class="font-semibold">GitHub</p>
+                      <p class="text-sm opacity-80">Code & Projects</p>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 ml-auto"></i>
+                  </a>
+                  <a
+                    href="https://codeforces.com/profile/krishkalola12"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-contact-link codeforces"
+                  >
+                    <i data-lucide="code" class="w-6 h-6"></i>
+                    <div>
+                      <p class="font-semibold">Codeforces</p>
+                      <p class="text-sm opacity-80">Competitive Programming</p>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 ml-auto"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Availability -->
+              <div class="glass-card p-8">
+                <h3
+                  class="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-3"
+                >
+                  <i
+                    data-lucide="calendar"
+                    class="w-6 h-6 text-primary-500"
+                  ></i>
+                  Availability
+                </h3>
+                <div class="flex items-start gap-3">
+                  <div
+                    class="w-3 h-3 rounded-full bg-green-500 mt-1.5 animate-pulse"
+                  ></div>
+                  <div>
+                    <p class="font-semibold text-gray-900 dark:text-white">
+                      Open to Opportunities
+                    </p>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm mt-1">
+                      Currently seeking internship and full-time opportunities
+                      in Full-Stack Development, Backend Engineering, and
+                      Machine Learning roles.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JavaScript -->
+    <script src="/js/componentLoader.js"></script>
+    <script src="/js/theme.js"></script>
+    <script src="/js/navigation.js"></script>
+
+    <script>
+      // Initialize Lucide icons
+      lucide.createIcons();
+
+      // Form validation and handling
+      const contactForm = document.getElementById("contact-form");
+      const successMsg = document.getElementById("form-success");
+      const errorMsg = document.getElementById("form-error");
+
+      contactForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        // Clear previous messages
+        successMsg.classList.add("hidden");
+        errorMsg.classList.add("hidden");
+
+        // Get form data
+        const formData = {
+          name: document.getElementById("name").value,
+          email: document.getElementById("email").value,
+          subject: document.getElementById("subject").value,
+          message: document.getElementById("message").value,
+        };
+
+        // Validate form
+        if (!validateForm(formData)) {
+          return;
+        }
+
+        // Simulate form submission (replace with actual backend call)
+        try {
+          // In a real implementation, you would send this to a backend API
+          // await fetch('/api/contact', {
+          //     method: 'POST',
+          //     headers: { 'Content-Type': 'application/json' },
+          //     body: JSON.stringify(formData)
+          // });
+
+          // For now, show success message
+          setTimeout(() => {
+            successMsg.classList.remove("hidden");
+            contactForm.reset();
+
+            // Auto-hide success message after 5 seconds
+            setTimeout(() => {
+              successMsg.classList.add("hidden");
+            }, 5000);
+          }, 500);
+        } catch (error) {
+          errorMsg.classList.remove("hidden");
+        }
+      });
+
+      function validateForm(data) {
+        let isValid = true;
+        const errorMessages = document.querySelectorAll(".error-message");
+
+        // Clear previous errors
+        errorMessages.forEach((msg) => msg.classList.add("hidden"));
+
+        // Validate name
+        if (data.name.trim().length < 2) {
+          showError("name", "Name must be at least 2 characters");
+          isValid = false;
+        }
+
+        // Validate email
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(data.email)) {
+          showError("email", "Please enter a valid email address");
+          isValid = false;
+        }
+
+        // Validate subject
+        if (data.subject.trim().length < 3) {
+          showError("subject", "Subject must be at least 3 characters");
+          isValid = false;
+        }
+
+        // Validate message
+        if (data.message.trim().length < 10) {
+          showError("message", "Message must be at least 10 characters");
+          isValid = false;
+        }
+
+        return isValid;
+      }
+
+      function showError(fieldId, message) {
+        const field = document.getElementById(fieldId);
+        const errorMsg = field.nextElementSibling;
+        errorMsg.textContent = message;
+        errorMsg.classList.remove("hidden");
+        field.classList.add("border-red-500");
+
+        // Remove error on input
+        field.addEventListener(
+          "input",
+          () => {
+            errorMsg.classList.add("hidden");
+            field.classList.remove("border-red-500");
+          },
+          { once: true }
+        );
+      }
+
+      // Re-initialize icons after component loading
+      setTimeout(() => lucide.createIcons(), 200);
+    </script>
+
+    <style>
+      .social-contact-link {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        border-radius: 0.75rem;
+        transition: all 0.3s ease;
+      }
+
+      .social-contact-link.linkedin {
+        background-color: rgb(239 246 255);
+        color: rgb(30 64 175);
+      }
+
+      .dark .social-contact-link.linkedin {
+        background-color: rgb(30 58 138 / 0.2);
+        color: rgb(147 197 253);
+      }
+
+      .social-contact-link.linkedin:hover {
+        background-color: rgb(219 234 254);
+        transform: translateX(5px);
+      }
+
+      .dark .social-contact-link.linkedin:hover {
+        background-color: rgb(30 58 138 / 0.3);
+      }
+
+      .social-contact-link.github {
+        background-color: rgb(243 244 246);
+        color: rgb(31 41 55);
+      }
+
+      .dark .social-contact-link.github {
+        background-color: rgb(55 65 81 / 0.3);
+        color: rgb(229 231 235);
+      }
+
+      .social-contact-link.github:hover {
+        background-color: rgb(229 231 235);
+        transform: translateX(5px);
+      }
+
+      .dark .social-contact-link.github:hover {
+        background-color: rgb(55 65 81 / 0.5);
+      }
+
+      .social-contact-link.codeforces {
+        background-color: rgb(254 242 242);
+        color: rgb(153 27 27);
+      }
+
+      .dark .social-contact-link.codeforces {
+        background-color: rgb(127 29 29 / 0.2);
+        color: rgb(252 165 165);
+      }
+
+      .social-contact-link.codeforces:hover {
+        background-color: rgb(254 226 226);
+        transform: translateX(5px);
+      }
+
+      .dark .social-contact-link.codeforces:hover {
+        background-color: rgb(127 29 29 / 0.3);
+      }
+    </style>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+/* Animations CSS - All animation keyframes and transition effects */
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    width: 0;
+  }
+  to {
+    width: calc(100% - 24px);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes floaty {
+  0% {
+    transform: translateY(0) translateX(0) scale(1);
+  }
+  33% {
+    transform: translateY(-30px) translateX(20px) scale(1.1);
+  }
+  66% {
+    transform: translateY(10px) translateX(-15px) scale(0.95);
+  }
+  100% {
+    transform: translateY(0) translateX(0) scale(1);
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Fade-in section animation */
+.fade-in-section {
+  animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Hero section animations */
+.hero-title {
+  letter-spacing: -0.02em;
+}
+
+.hero-info {
+  animation: slideIn 700ms cubic-bezier(0.2, 0.9, 0.3, 1) both;
+}
+
+/* Floating animation for profile card */
+.profile-card {
+  animation: float 6s ease-in-out infinite;
+}
+
+.profile-card:hover {
+  animation: none;
+}
+
+/* Blob animations */
+.blob {
+  will-change: transform, opacity;
+  transition: transform 700ms ease, opacity 700ms ease;
+}
+
+.blob.b1 {
+  animation: floaty 12s ease-in-out infinite, pulse 6s ease-in-out infinite;
+}
+
+.blob.b2 {
+  animation: floaty 10s ease-in-out infinite reverse,
+    pulse 8s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.blob.b3 {
+  animation: floaty 14s ease-in-out infinite, pulse 7s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+/* Dynamic gradient background */
+.dynamic-gradient {
+  background-size: 400% 400%;
+  animation: gradientShift 14s ease infinite;
+}
+
+/* Home section gradient animation */
+#home {
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+/* Reduce heavy effects on touch devices for performance */
+@media (hover: none) and (pointer: coarse) {
+  .social-card,
+  .profile-card,
+  .project-card {
+    transition: none;
+  }
+  .blob {
+    animation: none;
+  }
+  .particles-canvas {
+    display: none;
+  }
+  .hero-container {
+    transform: none !important;
+  }
+}
+
+/* Project showcase fade-in */
+.project-showcase {
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+}

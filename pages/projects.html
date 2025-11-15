@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore Krish Kalola's portfolio of full-stack applications, ML projects, and backend systems."
+    />
+    <title>Projects - Krish Kalola</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- Devicon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+
+    <!-- Inter font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/theme.css" />
+    <link rel="stylesheet" href="/css/layout.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/animations.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100 font-sans"
+  >
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main class="pt-24">
+      <!-- Breadcrumb -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <nav class="flex" aria-label="Breadcrumb">
+          <ol class="inline-flex items-center space-x-1 md:space-x-3">
+            <li class="inline-flex items-center">
+              <a
+                href="/index.html"
+                class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400"
+              >
+                <i data-lucide="home" class="w-4 h-4 mr-2"></i>
+                Home
+              </a>
+            </li>
+            <li aria-current="page">
+              <div class="flex items-center">
+                <i
+                  data-lucide="chevron-right"
+                  class="w-4 h-4 text-gray-400"
+                ></i>
+                <span
+                  class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400"
+                  >Projects</span
+                >
+              </div>
+            </li>
+          </ol>
+        </nav>
+      </div>
+
+      <!-- Projects Section -->
+      <section class="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+          <!-- Header -->
+          <div class="text-center mb-12">
+            <h1
+              class="text-5xl md:text-6xl font-extrabold mb-4 bg-gradient-to-r from-primary-600 to-purple-600 dark:from-primary-400 dark:to-purple-400 bg-clip-text text-transparent"
+            >
+              My Projects
+            </h1>
+            <p
+              class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto"
+            >
+              From algorithmic solutions to production-ready applications,
+              exploring the full spectrum of software engineering
+            </p>
+          </div>
+
+          <!-- Filter & Search -->
+          <div
+            class="mb-10 flex flex-col md:flex-row gap-4 justify-between items-center"
+          >
+            <div class="flex flex-wrap gap-3">
+              <button class="filter-btn active" data-filter="all">
+                All Projects
+              </button>
+              <button class="filter-btn" data-filter="fullstack">
+                Full-Stack
+              </button>
+              <button class="filter-btn" data-filter="backend">Backend</button>
+              <button class="filter-btn" data-filter="ml">
+                Machine Learning
+              </button>
+              <button class="filter-btn" data-filter="algorithms">
+                Algorithms
+              </button>
+            </div>
+            <div class="relative w-full md:w-auto md:min-w-[300px]">
+              <input
+                type="text"
+                id="search-input"
+                placeholder="Search projects..."
+                class="w-full px-4 py-2 pl-10 rounded-xl bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+              />
+              <i
+                data-lucide="search"
+                class="w-5 h-5 absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
+              ></i>
+            </div>
+          </div>
+
+          <!-- Projects Grid -->
+          <div
+            id="projects-grid"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          >
+            <!-- VideoTube -->
+            <div
+              class="project-card fade-in-section"
+              data-category="fullstack backend"
+            >
+              <div class="project-card-header">
+                <span class="project-badge">Full-Stack</span>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">
+                VideoTube - YouTube Clone
+              </h3>
+              <p class="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+                A production-grade video platform with real-time streaming,
+                comments, likes, subscriptions, and advanced backend features
+                like tweet system and playlists.
+              </p>
+              <div class="mb-4">
+                <h4
+                  class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
+                >
+                  Tech Stack:
+                </h4>
+                <div class="flex flex-wrap gap-2">
+                  <span class="tech-badge"
+                    ><i class="devicon-nodejs-plain text-sm"></i> Node.js</span
+                  >
+                  <span class="tech-badge"
+                    ><i class="devicon-express-original text-sm"></i>
+                    Express</span
+                  >
+                  <span class="tech-badge"
+                    ><i class="devicon-mongodb-plain text-sm"></i> MongoDB</span
+                  >
+                  <span class="tech-badge"
+                    ><i class="devicon-react-original text-sm"></i> React</span
+                  >
+                </div>
+              </div>
+              <div class="flex items-center gap-3 mt-auto">
+                <a
+                  href="https://github.com/krishkalola12/videotube-backend"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  <i data-lucide="github" class="w-4 h-4"></i>
+                  Code
+                </a>
+                <a href="#" class="project-link">
+                  <i data-lucide="external-link" class="w-4 h-4"></i>
+                  Details
+                </a>
+              </div>
+            </div>
+
+            <!-- Aadhaar OCR -->
+            <div
+              class="project-card fade-in-section"
+              data-category="ml backend"
+            >
+              <div class="project-card-header">
+                <span class="project-badge ml-badge">Machine Learning</span>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">
+                Aadhaar OCR Masking System
+              </h3>
+              <p class="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+                Privacy-focused OCR system for automatic detection and masking
+                of Aadhaar numbers in images, supporting diverse templates and
+                orientations.
+              </p>
+              <div class="mb-4">
+                <h4
+                  class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
+                >
+                  Tech Stack:
+                </h4>
+                <div class="flex flex-wrap gap-2">
+                  <span class="tech-badge"
+                    ><i class="devicon-python-plain text-sm"></i> Python</span
+                  >
+                  <span class="tech-badge">EasyOCR</span>
+                  <span class="tech-badge">OpenCV</span>
+                  <span class="tech-badge">FastAPI</span>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 mt-auto">
+                <a
+                  href="https://github.com/krishkalola12/aadhaar-masking-ocr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  <i data-lucide="github" class="w-4 h-4"></i>
+                  Code
+                </a>
+                <a href="#" class="project-link">
+                  <i data-lucide="external-link" class="w-4 h-4"></i>
+                  Details
+                </a>
+              </div>
+            </div>
+
+            <!-- Portfolio -->
+            <div class="project-card fade-in-section" data-category="fullstack">
+              <div class="project-card-header">
+                <span class="project-badge">Full-Stack</span>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">
+                Portfolio Website
+              </h3>
+              <p class="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+                Modern, responsive portfolio with modular architecture, dark
+                mode, smooth animations, and component-based design for optimal
+                maintainability.
+              </p>
+              <div class="mb-4">
+                <h4
+                  class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
+                >
+                  Tech Stack:
+                </h4>
+                <div class="flex flex-wrap gap-2">
+                  <span class="tech-badge"
+                    ><i class="devicon-html5-plain text-sm"></i> HTML5</span
+                  >
+                  <span class="tech-badge"
+                    ><i class="devicon-tailwindcss-plain text-sm"></i>
+                    Tailwind</span
+                  >
+                  <span class="tech-badge"
+                    ><i class="devicon-javascript-plain text-sm"></i>
+                    JavaScript</span
+                  >
+                </div>
+              </div>
+              <div class="flex items-center gap-3 mt-auto">
+                <a href="#" class="project-link">
+                  <i data-lucide="github" class="w-4 h-4"></i>
+                  Code
+                </a>
+                <a href="#" class="project-link">
+                  <i data-lucide="external-link" class="w-4 h-4"></i>
+                  Live Site
+                </a>
+              </div>
+            </div>
+
+            <!-- AI Toy Backend -->
+            <div
+              class="project-card fade-in-section"
+              data-category="ml backend"
+            >
+              <div class="project-card-header">
+                <span class="project-badge ml-badge">Machine Learning</span>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">
+                AI Toy Backend System
+              </h3>
+              <p class="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+                Intelligent backend for AI-powered educational toy, integrating
+                ML models for natural interaction and personalized learning
+                experiences.
+              </p>
+              <div class="mb-4">
+                <h4
+                  class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
+                >
+                  Tech Stack:
+                </h4>
+                <div class="flex flex-wrap gap-2">
+                  <span class="tech-badge"
+                    ><i class="devicon-python-plain text-sm"></i> Python</span
+                  >
+                  <span class="tech-badge"
+                    ><i class="devicon-nodejs-plain text-sm"></i> Node.js</span
+                  >
+                  <span class="tech-badge">TensorFlow</span>
+                  <span class="tech-badge">WebSocket</span>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 mt-auto">
+                <span class="text-sm text-gray-500 dark:text-gray-400 italic">
+                  <i data-lucide="lock" class="w-4 h-4 inline"></i>
+                  Private Project
+                </span>
+              </div>
+            </div>
+
+            <!-- Insomnia Profile -->
+            <div
+              class="project-card fade-in-section"
+              data-category="algorithms"
+            >
+              <div class="project-card-header">
+                <span class="project-badge algo-badge">Algorithms</span>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">
+                Competitive Programming Solutions
+              </h3>
+              <p class="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+                Collection of 139+ solutions on Insomnia (Codeforces
+                alternative) covering graph theory, dynamic programming, greedy
+                algorithms, and more.
+              </p>
+              <div class="mb-4">
+                <h4
+                  class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
+                >
+                  Skills:
+                </h4>
+                <div class="flex flex-wrap gap-2">
+                  <span class="tech-badge"
+                    ><i class="devicon-cplusplus-plain text-sm"></i> C++</span
+                  >
+                  <span class="tech-badge">Algorithms</span>
+                  <span class="tech-badge">Data Structures</span>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 mt-auto">
+                <a
+                  href="https://insomnia.rest/user/krishkalola12"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  <i data-lucide="external-link" class="w-4 h-4"></i>
+                  View Profile
+                </a>
+              </div>
+            </div>
+
+            <!-- LeetCode Journey -->
+            <div
+              class="project-card fade-in-section"
+              data-category="algorithms"
+            >
+              <div class="project-card-header">
+                <span class="project-badge algo-badge">Algorithms</span>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">
+                LeetCode Problem Solving
+              </h3>
+              <p class="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+                600+ problems solved across all difficulty levels, focusing on
+                optimal solutions and deep understanding of algorithmic
+                patterns.
+              </p>
+              <div class="mb-4">
+                <div class="grid grid-cols-3 gap-3">
+                  <div
+                    class="text-center p-2 bg-green-50 dark:bg-green-900/20 rounded-lg"
+                  >
+                    <div
+                      class="text-xl font-bold text-green-600 dark:text-green-400"
+                    >
+                      350+
+                    </div>
+                    <div class="text-xs text-gray-600 dark:text-gray-400">
+                      Easy
+                    </div>
+                  </div>
+                  <div
+                    class="text-center p-2 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg"
+                  >
+                    <div
+                      class="text-xl font-bold text-yellow-600 dark:text-yellow-400"
+                    >
+                      220+
+                    </div>
+                    <div class="text-xs text-gray-600 dark:text-gray-400">
+                      Medium
+                    </div>
+                  </div>
+                  <div
+                    class="text-center p-2 bg-red-50 dark:bg-red-900/20 rounded-lg"
+                  >
+                    <div
+                      class="text-xl font-bold text-red-600 dark:text-red-400"
+                    >
+                      30+
+                    </div>
+                    <div class="text-xs text-gray-600 dark:text-gray-400">
+                      Hard
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 mt-auto">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  <i data-lucide="external-link" class="w-4 h-4"></i>
+                  View Profile
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Empty State -->
+          <div id="empty-state" class="hidden text-center py-16">
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 dark:bg-gray-800 mb-4"
+            >
+              <i data-lucide="search-x" class="w-8 h-8 text-gray-400"></i>
+            </div>
+            <h3
+              class="text-xl font-semibold text-gray-700 dark:text-gray-300 mb-2"
+            >
+              No projects found
+            </h3>
+            <p class="text-gray-500 dark:text-gray-400">
+              Try adjusting your filters or search query
+            </p>
+          </div>
+
+          <!-- CTA -->
+          <div class="text-center mt-16">
+            <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+              Interested in collaborating?
+            </h3>
+            <a
+              href="/pages/contact.html"
+              class="inline-flex items-center gap-2 px-8 py-3 bg-primary-600 text-white font-semibold rounded-xl hover:bg-primary-700 transition-all duration-300 hover:scale-105"
+            >
+              <i data-lucide="mail" class="w-5 h-5"></i>
+              Let's Connect
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JavaScript -->
+    <script src="/js/componentLoader.js"></script>
+    <script src="/js/theme.js"></script>
+    <script src="/js/navigation.js"></script>
+
+    <script>
+      // Initialize Lucide icons
+      lucide.createIcons();
+
+      // Project filtering and search
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      const searchInput = document.getElementById("search-input");
+      const projectsGrid = document.getElementById("projects-grid");
+      const emptyState = document.getElementById("empty-state");
+      let activeFilter = "all";
+
+      // Filter functionality
+      filterButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          filterButtons.forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+          activeFilter = btn.dataset.filter;
+          filterProjects();
+        });
+      });
+
+      // Search functionality
+      searchInput.addEventListener("input", filterProjects);
+
+      function filterProjects() {
+        const searchTerm = searchInput.value.toLowerCase();
+        const projectCards = document.querySelectorAll(".project-card");
+        let visibleCount = 0;
+
+        projectCards.forEach((card) => {
+          const category = card.dataset.category;
+          const title = card.querySelector("h3").textContent.toLowerCase();
+          const description = card.querySelector("p").textContent.toLowerCase();
+
+          const matchesFilter =
+            activeFilter === "all" || category.includes(activeFilter);
+          const matchesSearch =
+            title.includes(searchTerm) || description.includes(searchTerm);
+
+          if (matchesFilter && matchesSearch) {
+            card.style.display = "block";
+            visibleCount++;
+          } else {
+            card.style.display = "none";
+          }
+        });
+
+        // Show/hide empty state
+        if (visibleCount === 0) {
+          projectsGrid.style.display = "none";
+          emptyState.classList.remove("hidden");
+        } else {
+          projectsGrid.style.display = "grid";
+          emptyState.classList.add("hidden");
+        }
+      }
+
+      // Fade-in animations on scroll
+      const observerOptions = {
+        threshold: 0.2,
+        rootMargin: "0px 0px -100px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll(".project-card").forEach((el) => {
+        el.style.opacity = "0";
+        el.style.transform = "translateY(20px)";
+        el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+        observer.observe(el);
+      });
+
+      // Re-initialize icons after component loading
+      setTimeout(() => lucide.createIcons(), 200);
+    </script>
+
+    <style>
+      .filter-btn {
+        padding: 0.5rem 1.25rem;
+        border-radius: 0.75rem;
+        font-weight: 600;
+        font-size: 0.875rem;
+        background-color: rgb(243 244 246);
+        color: rgb(75 85 99);
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+      }
+
+      .dark .filter-btn {
+        background-color: rgb(31 41 55);
+        color: rgb(156 163 175);
+      }
+
+      .filter-btn:hover {
+        background-color: rgb(224 231 255);
+        color: rgb(79 70 229);
+      }
+
+      .dark .filter-btn:hover {
+        background-color: rgb(49 46 129);
+        color: rgb(165 180 252);
+      }
+
+      .filter-btn.active {
+        background: linear-gradient(135deg, rgb(99 102 241), rgb(168 85 247));
+        color: white;
+        border-color: rgb(99 102 241);
+      }
+
+      .tech-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25rem;
+        padding: 0.25rem 0.75rem;
+        background-color: rgb(243 244 246);
+        color: rgb(55 65 81);
+        font-size: 0.75rem;
+        font-weight: 600;
+        border-radius: 0.5rem;
+      }
+
+      .dark .tech-badge {
+        background-color: rgb(31 41 55);
+        color: rgb(209 213 219);
+      }
+
+      .project-badge {
+        padding: 0.25rem 0.75rem;
+        background: linear-gradient(135deg, rgb(99 102 241), rgb(139 92 246));
+        color: white;
+        font-size: 0.75rem;
+        font-weight: 700;
+        border-radius: 0.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      .project-badge.ml-badge {
+        background: linear-gradient(135deg, rgb(16 185 129), rgb(5 150 105));
+      }
+
+      .project-badge.algo-badge {
+        background: linear-gradient(135deg, rgb(251 146 60), rgb(249 115 22));
+      }
+
+      .project-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        background-color: rgb(243 244 246);
+        color: rgb(55 65 81);
+        font-size: 0.875rem;
+        font-weight: 600;
+        border-radius: 0.5rem;
+        transition: all 0.3s ease;
+      }
+
+      .dark .project-link {
+        background-color: rgb(31 41 55);
+        color: rgb(209 213 219);
+      }
+
+      .project-link:hover {
+        background-color: rgb(99 102 241);
+        color: white;
+        transform: translateY(-2px);
+      }
+    </style>
+  </body>
+</html>

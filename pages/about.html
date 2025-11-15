@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn about Krish Kalola's journey in computer engineering, learning philosophy, and passion for technology."
+    />
+    <title>About - Krish Kalola</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- Inter font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/theme.css" />
+    <link rel="stylesheet" href="/css/layout.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/animations.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100 font-sans"
+  >
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main class="pt-24">
+      <!-- Breadcrumb -->
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <nav class="flex" aria-label="Breadcrumb">
+          <ol class="inline-flex items-center space-x-1 md:space-x-3">
+            <li class="inline-flex items-center">
+              <a
+                href="/index.html"
+                class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400"
+              >
+                <i data-lucide="home" class="w-4 h-4 mr-2"></i>
+                Home
+              </a>
+            </li>
+            <li aria-current="page">
+              <div class="flex items-center">
+                <i
+                  data-lucide="chevron-right"
+                  class="w-4 h-4 text-gray-400"
+                ></i>
+                <span
+                  class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400"
+                  >About</span
+                >
+              </div>
+            </li>
+          </ol>
+        </nav>
+      </div>
+
+      <!-- About Section -->
+      <section class="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center mb-12">
+            <h1
+              class="text-5xl md:text-6xl font-extrabold mb-4 bg-gradient-to-r from-primary-600 to-purple-600 dark:from-primary-400 dark:to-purple-400 bg-clip-text text-transparent"
+            >
+              About Me
+            </h1>
+            <p class="text-xl text-gray-600 dark:text-gray-400">
+              My journey, philosophy, and passion for technology
+            </p>
+          </div>
+
+          <!-- Introduction -->
+          <div class="glass-card p-8 md:p-12 mb-10 fade-in-section">
+            <div class="flex items-center gap-4 mb-6">
+              <div
+                class="w-12 h-12 rounded-full bg-gradient-to-br from-primary-500 to-purple-600 flex items-center justify-center"
+              >
+                <i data-lucide="user" class="w-6 h-6 text-white"></i>
+              </div>
+              <h2 class="text-3xl font-bold text-gray-900 dark:text-white">
+                Introduction
+              </h2>
+            </div>
+            <div class="space-y-6 text-lg text-gray-700 dark:text-gray-300">
+              <p>
+                My academic journey is driven by an insatiable curiosity for
+                problem-solving. It began with the logical rigor of competitive
+                programming, where I honed my ability to deconstruct complex
+                challenges into manageable, efficient algorithms. This
+                foundation in data structures and algorithms (DSA) became the
+                lens through which I view all technology.
+              </p>
+              <p>
+                However, I soon realized that theoretical solutions, while
+                elegant, were only the first step. My core philosophy is rooted
+                in
+                <strong
+                  class="font-semibold text-primary-600 dark:text-primary-400"
+                  >"pragmatic synthesis"</strong
+                >—the belief that true innovation lies at the intersection of
+                different fields.
+              </p>
+            </div>
+          </div>
+
+          <!-- Learning Philosophy -->
+          <div class="glass-card p-8 md:p-12 mb-10 fade-in-section">
+            <div class="flex items-center gap-4 mb-6">
+              <div
+                class="w-12 h-12 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center"
+              >
+                <i data-lucide="lightbulb" class="w-6 h-6 text-white"></i>
+              </div>
+              <h2 class="text-3xl font-bold text-gray-900 dark:text-white">
+                Learning Philosophy
+              </h2>
+            </div>
+            <div class="space-y-6 text-lg text-gray-700 dark:text-gray-300">
+              <p>
+                My studies in computer engineering are not just about learning
+                to code; they are about understanding the entire system, from
+                the operating system fundamentals to the user-facing
+                application.
+              </p>
+              <p>
+                This drive led me to explore backend development and, more
+                recently, machine learning. I see these not as separate
+                disciplines, but as complementary tools. My work at INavLabs,
+                developing an AI toy, exemplifies this: it requires robust
+                backend architecture (my Node.js experience) to support a
+                dynamic, intelligent ML model (my Python and ML skills).
+              </p>
+              <div
+                class="bg-primary-50 dark:bg-primary-900/20 p-6 rounded-xl border-l-4 border-primary-500"
+              >
+                <p
+                  class="font-semibold text-primary-700 dark:text-primary-300 mb-2"
+                >
+                  My Core Principles:
+                </p>
+                <ul class="list-disc list-inside space-y-2">
+                  <li>
+                    <strong>Continuous Improvement</strong> - Practiced through
+                    600+ LeetCode problems
+                  </li>
+                  <li>
+                    <strong>Collaborative Growth</strong> - Experienced in
+                    hackathons and ACM chapter
+                  </li>
+                  <li>
+                    <strong>Pragmatic Synthesis</strong> - Bridging theory and
+                    practical application
+                  </li>
+                  <li>
+                    <strong>Iterative Learning</strong> - Hands-on approach to
+                    mastering concepts
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Educational Journey -->
+          <div class="glass-card p-8 md:p-12 mb-10 fade-in-section">
+            <div class="flex items-center gap-4 mb-6">
+              <div
+                class="w-12 h-12 rounded-full bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center"
+              >
+                <i data-lucide="graduation-cap" class="w-6 h-6 text-white"></i>
+              </div>
+              <h2 class="text-3xl font-bold text-gray-900 dark:text-white">
+                Educational Background
+              </h2>
+            </div>
+
+            <div class="space-y-6">
+              <!-- Timeline -->
+              <div class="relative pl-8 border-l-2 border-primary-500">
+                <div class="mb-8">
+                  <div
+                    class="absolute -left-2.5 w-5 h-5 rounded-full bg-primary-500 border-4 border-gray-50 dark:border-gray-950"
+                  ></div>
+                  <time
+                    class="mb-1 text-sm font-semibold text-primary-600 dark:text-primary-400"
+                    >June 2023 - Present</time
+                  >
+                  <h3
+                    class="text-xl font-bold text-gray-900 dark:text-white mb-2"
+                  >
+                    Bachelor of Technology in Computer Engineering
+                  </h3>
+                  <p class="text-gray-600 dark:text-gray-400 mb-2">
+                    Pandit Deendayal Energy University, Gandhinagar
+                  </p>
+                  <div class="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
+                    <p
+                      class="text-2xl font-bold text-green-700 dark:text-green-300"
+                    >
+                      CGPA: 9.45 / 10.00
+                    </p>
+                  </div>
+                </div>
+
+                <div class="mb-8">
+                  <div
+                    class="absolute -left-2.5 w-5 h-5 rounded-full bg-primary-300 border-4 border-gray-50 dark:border-gray-950"
+                  ></div>
+                  <time
+                    class="mb-1 text-sm font-semibold text-primary-600 dark:text-primary-400"
+                    >2023</time
+                  >
+                  <h3
+                    class="text-xl font-bold text-gray-900 dark:text-white mb-2"
+                  >
+                    Started Competitive Programming Journey
+                  </h3>
+                  <p class="text-gray-600 dark:text-gray-400">
+                    Began solving algorithmic problems, building foundation in
+                    DSA
+                  </p>
+                </div>
+
+                <div>
+                  <div
+                    class="absolute -left-2.5 w-5 h-5 rounded-full bg-primary-300 border-4 border-gray-50 dark:border-gray-950"
+                  ></div>
+                  <time
+                    class="mb-1 text-sm font-semibold text-primary-600 dark:text-primary-400"
+                    >2024 - Present</time
+                  >
+                  <h3
+                    class="text-xl font-bold text-gray-900 dark:text-white mb-2"
+                  >
+                    Expanding into ML and Full-Stack Development
+                  </h3>
+                  <p class="text-gray-600 dark:text-gray-400">
+                    Working as ML Developer at INavLabs, building production
+                    systems
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mission Statement -->
+          <div class="glass-card p-8 md:p-12 fade-in-section">
+            <div class="flex items-center gap-4 mb-6">
+              <div
+                class="w-12 h-12 rounded-full bg-gradient-to-br from-rose-500 to-pink-600 flex items-center justify-center"
+              >
+                <i data-lucide="target" class="w-6 h-6 text-white"></i>
+              </div>
+              <h2 class="text-3xl font-bold text-gray-900 dark:text-white">
+                Mission & Vision
+              </h2>
+            </div>
+            <div class="space-y-6 text-lg text-gray-700 dark:text-gray-300">
+              <p
+                class="text-xl font-semibold text-primary-600 dark:text-primary-400 italic"
+              >
+                "To become a responsible and innovative architect of technology,
+                building solutions that bridge multiple domains and create
+                meaningful impact."
+              </p>
+              <p>
+                I believe that the most profound learning occurs when applying
+                knowledge to build tangible, impactful solutions that address
+                real-world needs. My journey from LeetCode to full-stack MERN
+                applications and ML-powered backends has taught me that the
+                "how" (the technology) is in service of the "why" (the user need
+                and the ethical implication).
+              </p>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl">
+                  <h3
+                    class="font-bold text-blue-700 dark:text-blue-300 mb-3 flex items-center gap-2"
+                  >
+                    <i data-lucide="eye" class="w-5 h-5"></i>
+                    Vision
+                  </h3>
+                  <p class="text-gray-700 dark:text-gray-300">
+                    To work at the intersection of large-scale distributed
+                    systems and applied AI, designing infrastructure for
+                    intelligent applications at scale.
+                  </p>
+                </div>
+                <div class="bg-purple-50 dark:bg-purple-900/20 p-6 rounded-xl">
+                  <h3
+                    class="font-bold text-purple-700 dark:text-purple-300 mb-3 flex items-center gap-2"
+                  >
+                    <i data-lucide="heart" class="w-5 h-5"></i>
+                    Values
+                  </h3>
+                  <p class="text-gray-700 dark:text-gray-300">
+                    Privacy by design, equitable access, continuous learning,
+                    and collaborative innovation.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Section -->
+          <div class="text-center mt-12">
+            <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+              Want to learn more?
+            </h3>
+            <div class="flex flex-wrap justify-center gap-4">
+              <a
+                href="/pages/projects.html"
+                class="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 text-white font-semibold rounded-xl hover:bg-primary-700 transition-all duration-300 hover:scale-105"
+              >
+                <i data-lucide="folder" class="w-5 h-5"></i>
+                View My Projects
+              </a>
+              <a
+                href="/pages/experience.html"
+                class="inline-flex items-center gap-2 px-6 py-3 bg-gray-700 text-white font-semibold rounded-xl hover:bg-gray-800 transition-all duration-300 hover:scale-105"
+              >
+                <i data-lucide="briefcase" class="w-5 h-5"></i>
+                My Experience
+              </a>
+              <a
+                href="/pages/contact.html"
+                class="inline-flex items-center gap-2 px-6 py-3 border-2 border-primary-600 text-primary-600 dark:text-primary-400 font-semibold rounded-xl hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-all duration-300 hover:scale-105"
+              >
+                <i data-lucide="mail" class="w-5 h-5"></i>
+                Get in Touch
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JavaScript -->
+    <script src="/js/componentLoader.js"></script>
+    <script src="/js/theme.js"></script>
+    <script src="/js/navigation.js"></script>
+
+    <script>
+      // Initialize Lucide icons
+      lucide.createIcons();
+
+      // Fade-in animations on scroll
+      const observerOptions = {
+        threshold: 0.2,
+        rootMargin: "0px 0px -100px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("fade-in-section");
+          }
+        });
+      }, observerOptions);
+
+      document
+        .querySelectorAll(".glass-card")
+        .forEach((el) => observer.observe(el));
+
+      // Re-initialize icons after component loading
+      setTimeout(() => lucide.createIcons(), 200);
+    </script>
+  </body>
+</html>
