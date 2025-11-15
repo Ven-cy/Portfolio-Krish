@@ -59,6 +59,16 @@ class ComponentLoader {
     if (window.ThemeManager) {
       window.ThemeManager.init();
     }
+
+    // Initialize animations (particles, parallax, etc.) after components are loaded
+    if (window.AnimationsManager) {
+      try {
+        window.AnimationsManager.init();
+      } catch (err) {
+        // animations may have initialized earlier; ignore errors
+        console.warn('AnimationsManager init error:', err);
+      }
+    }
   }
 }
 
