@@ -1,0 +1,122 @@
+{
+  "experience": [
+    {
+      "id": "inavlabs",
+      "company": "INavLabs",
+      "position": "ML Developer",
+      "type": "Internship",
+      "startDate": "August 2025",
+      "endDate": "Present",
+      "current": true,
+      "location": "Remote",
+      "description": "Working on developing an AI-powered interactive toy (Curita) using machine learning, NLP, and speech recognition technologies.",
+      "achievements": [
+        "Designed and implemented ML models for speech recognition and natural language understanding",
+        "Optimized model performance for edge device deployment",
+        "Developed adaptive learning algorithms to personalize user interactions",
+        "Collaborated with hardware team to integrate ML models with embedded systems"
+      ],
+      "technologies": [
+        "Python",
+        "TensorFlow",
+        "Scikit-Learn",
+        "NLP",
+        "Speech Recognition",
+        "Edge ML"
+      ]
+    },
+    {
+      "id": "acm-pdeu",
+      "company": "ACM - PDEU Chapter",
+      "position": "Competitive Programming Core Member",
+      "type": "Leadership",
+      "startDate": "January 2024",
+      "endDate": "Present",
+      "current": true,
+      "location": "Gandhinagar, India",
+      "description": "Leading competitive programming initiatives, teaching DSA to 50+ students, and organizing coding competitions.",
+      "achievements": [
+        "Designed curriculum for weekly DSA workshops covering advanced topics",
+        "Mentored junior students, helping them improve problem-solving skills",
+        "Organized mock coding contests and hackathons for university students",
+        "Contributed to improved university performance in national coding competitions",
+        "Achieved 139th rank in Insomnia'25 coding competition"
+      ],
+      "technologies": ["C++", "Python", "Java", "Data Structures", "Algorithms"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Pandit Deendayal Energy University (PDEU)",
+      "degree": "B.Tech in Computer Engineering",
+      "location": "Gandhinagar, India",
+      "startDate": "June 2023",
+      "endDate": "May 2027",
+      "gpa": "9.45",
+      "current": true,
+      "achievements": [
+        "Maintained 9.45 CGPA throughout all semesters",
+        "Active member of ACM student chapter",
+        "Participated in multiple hackathons and coding competitions"
+      ]
+    }
+  ],
+  "achievements": [
+    {
+      "title": "600+ LeetCode Problems Solved",
+      "description": "Consistently solved algorithmic problems across all difficulty levels",
+      "date": "2023-Present",
+      "category": "Competitive Programming"
+    },
+    {
+      "title": "Codeforces Rating: 1472",
+      "description": "Achieved top 10% ranking in India on Codeforces competitive programming platform",
+      "date": "2024",
+      "category": "Competitive Programming"
+    },
+    {
+      "title": "139th Rank - Insomnia'25",
+      "description": "Secured 139th position in Insomnia'25 national coding competition",
+      "date": "2025",
+      "category": "Competition"
+    },
+    {
+      "title": "Flipkart Grid 5.0 Semi-Finalist",
+      "description": "Advanced to semi-finals of Flipkart Grid 5.0, one of India's largest tech challenges",
+      "date": "2023",
+      "category": "Hackathon"
+    },
+    {
+      "title": "ICPC Regionals Participant",
+      "description": "Qualified and participated in ACM ICPC Regional Round",
+      "date": "2024",
+      "category": "Competition"
+    }
+  ],
+  "competitions": [
+    {
+      "name": "Flipkart Grid 5.0",
+      "position": "Semi-Finalist",
+      "description": "Built a full-stack e-commerce solution with AI-powered recommendations. Led backend development and implemented core business logic.",
+      "date": "2023",
+      "team_size": 4,
+      "technologies": ["Node.js", "React", "MongoDB", "ML"]
+    },
+    {
+      "name": "ICPC Regionals",
+      "position": "Participant",
+      "description": "Competed in ACM ICPC Regional Round, focusing on graph theory and dynamic programming problems.",
+      "date": "2024",
+      "team_size": 3,
+      "technologies": ["C++", "Algorithms", "DSA"]
+    },
+    {
+      "name": "Insomnia'25",
+      "position": "139th Rank",
+      "description": "Achieved 139th position among thousands of participants in this national-level coding competition.",
+      "date": "2025",
+      "team_size": 1,
+      "technologies": ["C++", "Python", "Algorithms"]
+    }
+  ]
+}

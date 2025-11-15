@@ -6,6 +6,7 @@ const AnimationsManager = {
     this.initParallax();
     this.initSocialCards();
     this.initProjectCards();
+    this.initScrollAnimations();
   },
 
   initParticles() {
@@ -152,6 +153,31 @@ const AnimationsManager = {
       card.addEventListener('blur', () => {
         card.style.transform = '';
       });
+    });
+  },
+
+  initScrollAnimations() {
+    // Intersection Observer for fade-in animations on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in-section');
+          // Once animated, stop observing
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    // Observe all glass cards and major sections
+    document.querySelectorAll('.glass-card, section[id]').forEach(el => {
+      if (!el.classList.contains('fade-in-section')) {
+        observer.observe(el);
+      }
     });
   }
 };

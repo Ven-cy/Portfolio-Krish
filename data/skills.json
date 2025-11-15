@@ -1,0 +1,73 @@
+{
+  "skills": {
+    "programming_languages": [
+      { "name": "C", "level": 90, "icon": "devicon-c-plain" },
+      { "name": "C++", "level": 90, "icon": "devicon-cplusplus-plain" },
+      { "name": "Java", "level": 85, "icon": "devicon-java-plain" },
+      { "name": "JavaScript", "level": 88, "icon": "devicon-javascript-plain" },
+      { "name": "Python", "level": 85, "icon": "devicon-python-plain" },
+      { "name": "SQL", "level": 80, "icon": "database" },
+      { "name": "HTML5", "level": 92, "icon": "devicon-html5-plain" },
+      { "name": "CSS3", "level": 88, "icon": "devicon-css3-plain" }
+    ],
+    "technologies_frameworks": [
+      { "name": "MongoDB", "level": 85, "icon": "devicon-mongodb-plain" },
+      { "name": "Express.js", "level": 87, "icon": "devicon-express-original" },
+      { "name": "React", "level": 82, "icon": "devicon-react-original" },
+      { "name": "Node.js", "level": 88, "icon": "devicon-nodejs-plain" },
+      { "name": "MySQL", "level": 80, "icon": "devicon-mysql-plain" },
+      {
+        "name": "TailwindCSS",
+        "level": 90,
+        "icon": "devicon-tailwindcss-plain"
+      }
+    ],
+    "machine_learning": [
+      { "name": "Scikit-Learn", "level": 80, "icon": "brain" },
+      { "name": "Keras", "level": 75, "icon": "cpu" },
+      { "name": "TensorFlow", "level": 72, "icon": "zap" },
+      { "name": "Pandas", "level": 85, "icon": "database-zap" },
+      { "name": "NumPy", "level": 83, "icon": "binary" }
+    ],
+    "fundamentals": [
+      { "name": "Data Structures", "level": 92, "icon": "database" },
+      { "name": "Algorithms", "level": 90, "icon": "zap" },
+      { "name": "DBMS", "level": 85, "icon": "database-zap" },
+      { "name": "OOP", "level": 88, "icon": "binary" },
+      { "name": "Operating Systems", "level": 80, "icon": "hard-drive" }
+    ],
+    "tools": [
+      { "name": "Git", "level": 88, "icon": "devicon-git-plain" },
+      { "name": "GitHub", "level": 90, "icon": "devicon-github-original" },
+      { "name": "Postman", "level": 85, "icon": "devicon-postman-plain" },
+      { "name": "VS Code", "level": 92, "icon": "code-2" },
+      { "name": "Linux", "level": 78, "icon": "terminal" }
+    ],
+    "soft_skills": [
+      {
+        "name": "Problem Solving",
+        "description": "Solved 600+ LeetCode problems, Codeforces rating 1472"
+      },
+      {
+        "name": "Leadership",
+        "description": "Core member at ACM, teaching 50+ students"
+      },
+      {
+        "name": "Collaboration",
+        "description": "Team player in hackathons and group projects"
+      },
+      {
+        "name": "Communication",
+        "description": "Effective technical communication and presentation skills"
+      },
+      {
+        "name": "Adaptability",
+        "description": "Quick learner, adapting to new technologies and frameworks"
+      },
+      {
+        "name": "Time Management",
+        "description": "Balancing academics, work, and extracurriculars"
+      }
+    ]
+  }
+}

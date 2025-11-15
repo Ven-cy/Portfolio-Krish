@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Krish Kalola's Resume - Education, Work Experience, Skills, and Achievements in Computer Engineering and Machine Learning."
+    />
+    <title>Resume - Krish Kalola</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- Inter font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/theme.css" />
+    <link rel="stylesheet" href="/css/layout.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/animations.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Print Styles -->
+    <style>
+      @media print {
+        /* Hide elements that shouldn't be printed */
+        #header-placeholder,
+        #footer-placeholder,
+        nav,
+        .breadcrumb,
+        #download-pdf-btn,
+        #print-resume-btn,
+        button {
+          display: none !important;
+        }
+
+        /* Reset page margins */
+        @page {
+          margin: 0.5in;
+        }
+
+        /* Optimize layout for printing */
+        body {
+          background: white !important;
+          color: black !important;
+          font-size: 11pt;
+        }
+
+        .glass-card {
+          background: white !important;
+          border: 1px solid #e5e7eb !important;
+          box-shadow: none !important;
+          page-break-inside: avoid;
+        }
+
+        /* Ensure text is readable */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          color: black !important;
+        }
+
+        .text-gray-600,
+        .text-gray-700,
+        .dark\\:text-gray-300,
+        .dark\\:text-gray-400 {
+          color: #4b5563 !important;
+        }
+
+        /* Remove unnecessary decorations */
+        .bg-gradient-to-r,
+        .bg-gradient-to-br {
+          background: #1f2937 !important;
+          -webkit-background-clip: text !important;
+          background-clip: text !important;
+        }
+
+        /* Compact spacing for print */
+        .py-12 {
+          padding-top: 1rem !important;
+          padding-bottom: 1rem !important;
+        }
+
+        .mb-16 {
+          margin-bottom: 1.5rem !important;
+        }
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100 font-sans"
+  >
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main class="pt-24">
+      <!-- Breadcrumb -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <nav class="flex" aria-label="Breadcrumb">
+          <ol class="inline-flex items-center space-x-1 md:space-x-3">
+            <li class="inline-flex items-center">
+              <a
+                href="/index.html"
+                class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400"
+              >
+                <i data-lucide="home" class="w-4 h-4 mr-2"></i>
+                Home
+              </a>
+            </li>
+            <li aria-current="page">
+              <div class="flex items-center">
+                <i
+                  data-lucide="chevron-right"
+                  class="w-4 h-4 text-gray-400"
+                ></i>
+                <span
+                  class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400"
+                  >Resume</span
+                >
+              </div>
+            </li>
+          </ol>
+        </nav>
+      </div>
+
+      <!-- Resume Section -->
+      <section class="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+          <!-- Header -->
+          <div class="text-center mb-16 px-4">
+            <h1
+              class="text-5xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-primary-600 to-purple-600 dark:from-primary-400 dark:to-purple-400 bg-clip-text text-transparent"
+            >
+              Resume
+            </h1>
+            <p
+              class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto"
+            >
+              Education, Experience, Skills, and Achievements
+            </p>
+            <!-- Download Resume Button -->
+            <div
+              class="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center"
+            >
+              <button
+                id="download-pdf-btn"
+                class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary-600 to-purple-600 text-white font-bold rounded-xl shadow-lg hover:shadow-xl hover:shadow-primary-500/30 transition-all duration-300 hover:scale-105"
+              >
+                <i data-lucide="download" class="w-5 h-5"></i>
+                <span>Download PDF Resume</span>
+              </button>
+              <button
+                id="print-resume-btn"
+                class="inline-flex items-center gap-2 px-8 py-4 bg-gray-600 dark:bg-gray-700 text-white font-bold rounded-xl shadow-lg hover:bg-gray-700 dark:hover:bg-gray-600 hover:shadow-xl transition-all duration-300 hover:scale-105"
+              >
+                <i data-lucide="printer" class="w-5 h-5"></i>
+                <span>Print Resume</span>
+              </button>
+            </div>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-4">
+              Download as PDF or print directly from your browser
+            </p>
+          </div>
+
+          <div class="glass-card p-8 md:p-12 fade-in-section">
+            <!-- Education -->
+            <div class="mb-12">
+              <div class="flex items-center gap-3 mb-6">
+                <div
+                  class="w-12 h-12 rounded-full bg-gradient-to-br from-primary-500 to-purple-600 flex items-center justify-center"
+                >
+                  <i
+                    data-lucide="graduation-cap"
+                    class="w-6 h-6 text-white"
+                  ></i>
+                </div>
+                <h3
+                  class="text-3xl font-semibold text-primary-600 dark:text-primary-400 border-b-2 border-primary-200 dark:border-primary-800 pb-2 flex-1"
+                >
+                  Education
+                </h3>
+              </div>
+              <div
+                class="flex flex-col sm:flex-row justify-between items-start bg-gray-50 dark:bg-gray-900/50 p-6 rounded-xl"
+              >
+                <div class="flex-1">
+                  <h4 class="text-xl font-bold text-gray-900 dark:text-white">
+                    Pandit Deendayal Energy University
+                  </h4>
+                  <p class="text-lg text-gray-700 dark:text-gray-300 mt-1">
+                    Bachelor of Technology in Computer Engineering
+                  </p>
+                  <p class="text-md text-gray-600 dark:text-gray-400 mt-2">
+                    <span class="font-semibold">GPA:</span> 9.45 / 10.00
+                  </p>
+                </div>
+                <div class="text-left sm:text-right flex-shrink-0 mt-4 sm:mt-0">
+                  <p
+                    class="text-lg font-medium text-gray-700 dark:text-gray-300"
+                  >
+                    Gandhinagar, India
+                  </p>
+                  <p class="text-md text-gray-600 dark:text-gray-400">
+                    June 2023 - May 2027
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Work Experience -->
+            <div class="mb-12">
+              <div class="flex items-center gap-3 mb-6">
+                <div
+                  class="w-12 h-12 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center"
+                >
+                  <i data-lucide="briefcase" class="w-6 h-6 text-white"></i>
+                </div>
+                <h3
+                  class="text-3xl font-semibold text-primary-600 dark:text-primary-400 border-b-2 border-primary-200 dark:border-primary-800 pb-2 flex-1"
+                >
+                  Work Experience
+                </h3>
+              </div>
+              <div class="bg-gray-50 dark:bg-gray-900/50 p-6 rounded-xl">
+                <div
+                  class="flex flex-col sm:flex-row justify-between items-start mb-4"
+                >
+                  <div class="flex-1">
+                    <h4 class="text-xl font-bold text-gray-900 dark:text-white">
+                      ML Developer
+                    </h4>
+                    <p class="text-lg text-gray-700 dark:text-gray-300 mt-1">
+                      INavLabs
+                    </p>
+                  </div>
+                  <div
+                    class="text-left sm:text-right flex-shrink-0 mt-2 sm:mt-0"
+                  >
+                    <p
+                      class="text-lg font-medium text-gray-700 dark:text-gray-300"
+                    >
+                      Gandhinagar, India
+                    </p>
+                    <p class="text-md text-gray-600 dark:text-gray-400">
+                      Aug 2025 - Present
+                    </p>
+                  </div>
+                </div>
+                <ul class="mt-4 space-y-3 text-gray-700 dark:text-gray-300">
+                  <li class="flex items-start gap-3">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"
+                    ></i>
+                    <span
+                      >Architected the core backend for 'Curita', an interactive
+                      AI toy, leveraging Supabase to power a dynamic agent
+                      system for adaptive conversational experiences.</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"
+                    ></i>
+                    <span
+                      >Engineered a real-time voice transformation service in
+                      Python, exposing 9 distinct audio modulation parameters
+                      (e.g., pitch, tempo) through a scalable RESTful API.</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"
+                    ></i>
+                    <span
+                      >Implemented a low-latency WebSocket API to ensure
+                      seamless, real-time bidirectional communication between
+                      the device and the AI backend.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Skills -->
+            <div class="mb-12">
+              <div class="flex items-center gap-3 mb-6">
+                <div
+                  class="w-12 h-12 rounded-full bg-gradient-to-br from-pink-500 to-rose-600 flex items-center justify-center"
+                >
+                  <i data-lucide="code" class="w-6 h-6 text-white"></i>
+                </div>
+                <h3
+                  class="text-3xl font-semibold text-primary-600 dark:text-primary-400 border-b-2 border-primary-200 dark:border-primary-800 pb-2 flex-1"
+                >
+                  Skills
+                </h3>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 dark:bg-gray-900/50 p-6 rounded-xl">
+                  <h4
+                    class="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2"
+                  >
+                    <i data-lucide="cpu" class="w-5 h-5 text-primary-500"></i>
+                    Technical Skills
+                  </h4>
+                  <ul class="space-y-3 text-gray-700 dark:text-gray-300">
+                    <li>
+                      <strong class="text-primary-600 dark:text-primary-400"
+                        >Languages:</strong
+                      >
+                      C, C++, Java, JavaScript, Python, SQL, HTML, CSS
+                    </li>
+                    <li>
+                      <strong class="text-primary-600 dark:text-primary-400"
+                        >Technologies:</strong
+                      >
+                      MongoDB, Express.js, Node.js, Mongoose, MySQL, Tailwind
+                      CSS
+                    </li>
+                    <li>
+                      <strong class="text-primary-600 dark:text-primary-400"
+                        >Machine Learning:</strong
+                      >
+                      Scikit-Learn, Keras, TensorFlow, Pandas, NumPy
+                    </li>
+                    <li>
+                      <strong class="text-primary-600 dark:text-primary-400"
+                        >Fundamentals:</strong
+                      >
+                      DSA, DBMS, OOP, Operating Systems
+                    </li>
+                  </ul>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-900/50 p-6 rounded-xl">
+                  <h4
+                    class="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2"
+                  >
+                    <i data-lucide="users" class="w-5 h-5 text-primary-500"></i>
+                    Soft Skills
+                  </h4>
+                  <ul class="space-y-3 text-gray-700 dark:text-gray-300">
+                    <li>
+                      <strong class="text-primary-600 dark:text-primary-400"
+                        >Problem-Solving:</strong
+                      >
+                      Proven ability to deconstruct and solve complex
+                      algorithmic problems.
+                    </li>
+                    <li>
+                      <strong class="text-primary-600 dark:text-primary-400"
+                        >Leadership & Mentorship:</strong
+                      >
+                      Experience instructing and leading peers in technical
+                      topics (ACM).
+                    </li>
+                    <li>
+                      <strong class="text-primary-600 dark:text-primary-400"
+                        >Collaboration:</strong
+                      >
+                      Thrives in team-based, high-pressure environments
+                      (Hackathons, ICPC).
+                    </li>
+                    <li>
+                      <strong class="text-primary-600 dark:text-primary-400"
+                        >Communication:</strong
+                      >
+                      Articulating complex technical concepts to diverse
+                      audiences.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Achievements and Competitions -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <div class="flex items-center gap-3 mb-6">
+                  <div
+                    class="w-12 h-12 rounded-full bg-gradient-to-br from-yellow-500 to-orange-600 flex items-center justify-center"
+                  >
+                    <i data-lucide="trophy" class="w-6 h-6 text-white"></i>
+                  </div>
+                  <h3
+                    class="text-3xl font-semibold text-primary-600 dark:text-primary-400 border-b-2 border-primary-200 dark:border-primary-800 pb-2 flex-1"
+                  >
+                    Achievements
+                  </h3>
+                </div>
+                <ul class="space-y-3 text-gray-700 dark:text-gray-300">
+                  <li class="flex items-start gap-3">
+                    <i
+                      data-lucide="award"
+                      class="w-5 h-5 text-yellow-500 flex-shrink-0 mt-0.5"
+                    ></i>
+                    <span>Solved 600+ algorithmic problems on LeetCode.</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <i
+                      data-lucide="award"
+                      class="w-5 h-5 text-yellow-500 flex-shrink-0 mt-0.5"
+                    ></i>
+                    <span
+                      >Achieved a competitive 1472 rating on Codeforces (top 10%
+                      in India).</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <i
+                      data-lucide="award"
+                      class="w-5 h-5 text-yellow-500 flex-shrink-0 mt-0.5"
+                    ></i>
+                    <span
+                      >Secured 139th position out of 2,500+ teams in
+                      Insomnia'25.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="flex items-center gap-3 mb-6">
+                  <div
+                    class="w-12 h-12 rounded-full bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center"
+                  >
+                    <i data-lucide="target" class="w-6 h-6 text-white"></i>
+                  </div>
+                  <h3
+                    class="text-3xl font-semibold text-primary-600 dark:text-primary-400 border-b-2 border-primary-200 dark:border-primary-800 pb-2 flex-1"
+                  >
+                    Competitions & Activities
+                  </h3>
+                </div>
+                <ul class="space-y-3 text-gray-700 dark:text-gray-300">
+                  <li class="flex items-start gap-3">
+                    <i
+                      data-lucide="zap"
+                      class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"
+                    ></i>
+                    <span
+                      ><strong class="font-semibold">Flipkart Grid 5.0:</strong>
+                      Advanced to the semi-finals of the national software
+                      development hackathon.</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <i
+                      data-lucide="zap"
+                      class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"
+                    ></i>
+                    <span
+                      ><strong class="font-semibold">ICPC Regionals:</strong>
+                      Represented the university at the premier team-based
+                      algorithmic competition.</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <i
+                      data-lucide="zap"
+                      class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"
+                    ></i>
+                    <span
+                      ><strong class="font-semibold"
+                        >ACM - PDEU Chapter (Core Member):</strong
+                      >
+                      Instructed 50+ students in competitive programming to
+                      enhance their problem-solving skills.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JavaScript -->
+    <script src="/js/componentLoader.js"></script>
+    <script src="/js/theme.js"></script>
+    <script src="/js/navigation.js"></script>
+    <script src="/js/animations.js"></script>
+
+    <script>
+      // Initialize Lucide icons
+      lucide.createIcons();
+
+      // Re-initialize after component loading
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(() => lucide.createIcons(), 200);
+      });
+
+      // PDF Download Functionality
+      document
+        .getElementById("download-pdf-btn")
+        .addEventListener("click", async function () {
+          const button = this;
+          const originalText = button.innerHTML;
+
+          // Show loading state
+          button.innerHTML =
+            '<i data-lucide="loader" class="w-5 h-5 animate-spin"></i><span>Generating PDF...</span>';
+          lucide.createIcons();
+          button.disabled = true;
+
+          try {
+            // Check if html2pdf is available
+            if (typeof html2pdf === "undefined") {
+              // Load html2pdf library dynamically
+              await loadScript(
+                "https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+              );
+            }
+
+            // Get the resume content
+            const element = document.querySelector(".glass-card");
+            const opt = {
+              margin: 0.5,
+              filename: "Krish_Kalola_Resume.pdf",
+              image: { type: "jpeg", quality: 0.98 },
+              html2canvas: { scale: 2, useCORS: true },
+              jsPDF: { unit: "in", format: "a4", orientation: "portrait" },
+            };
+
+            // Generate and download PDF
+            await html2pdf().set(opt).from(element).save();
+
+            // Show success state
+            button.innerHTML =
+              '<i data-lucide="check" class="w-5 h-5"></i><span>Downloaded!</span>';
+            lucide.createIcons();
+
+            // Reset button after 2 seconds
+            setTimeout(() => {
+              button.innerHTML = originalText;
+              button.disabled = false;
+              lucide.createIcons();
+            }, 2000);
+          } catch (error) {
+            console.error("PDF generation failed:", error);
+            alert(
+              "PDF generation failed. Please try printing instead or contact me directly for my resume."
+            );
+            button.innerHTML = originalText;
+            button.disabled = false;
+            lucide.createIcons();
+          }
+        });
+
+      // Print Functionality
+      document
+        .getElementById("print-resume-btn")
+        .addEventListener("click", function () {
+          window.print();
+        });
+
+      // Helper function to load external scripts
+      function loadScript(src) {
+        return new Promise((resolve, reject) => {
+          const script = document.createElement("script");
+          script.src = src;
+          script.onload = resolve;
+          script.onerror = reject;
+          document.head.appendChild(script);
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+{
+  "projects": [
+    {
+      "id": "videotube",
+      "title": "VideoTube - Full-Stack Video Platform",
+      "shortDescription": "A comprehensive video streaming platform built with MERN stack",
+      "description": "VideoTube is a full-featured video streaming platform similar to YouTube, built from scratch using the MERN stack. It includes user authentication, video upload/streaming, comments, likes, subscriptions, and a recommendation system.",
+      "image": "https://placehold.co/800x600/6366f1/white?text=VideoTube",
+      "technologies": [
+        "MongoDB",
+        "Express.js",
+        "React",
+        "Node.js",
+        "JWT",
+        "Cloudinary",
+        "Multer"
+      ],
+      "category": "Full-Stack",
+      "featured": true,
+      "github": "https://github.com/Graviton17/VideoTube",
+      "live": null,
+      "keyFeatures": [
+        "User authentication with JWT and bcrypt",
+        "Video upload and streaming with Cloudinary integration",
+        "Comment system with nested replies",
+        "Like/dislike functionality for videos and comments",
+        "Subscription system with channel management",
+        "User dashboard with video analytics",
+        "Responsive design for all devices"
+      ],
+      "challenges": [
+        "Implementing efficient video streaming with chunk-based delivery",
+        "Designing a scalable database schema for relationships",
+        "Optimizing query performance for recommendation system"
+      ],
+      "learnings": [
+        "Advanced MongoDB aggregation pipelines",
+        "File upload handling with Multer and cloud storage",
+        "JWT-based authentication and authorization",
+        "RESTful API design principles"
+      ]
+    },
+    {
+      "id": "aadhaar-ocr",
+      "title": "Aadhaar Crowd Management System",
+      "shortDescription": "OCR-based crowd management system for Aadhaar centers",
+      "description": "A smart queue management system for Aadhaar enrollment centers using OCR technology to reduce wait times and improve service efficiency. The system includes slot booking, real-time queue management, and admin dashboard.",
+      "image": "https://placehold.co/800x600/3b82f6/white?text=Aadhaar+OCR",
+      "technologies": [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Tesseract.js",
+        "JWT",
+        "EJS",
+        "TailwindCSS"
+      ],
+      "category": "Full-Stack",
+      "featured": true,
+      "github": "https://github.com/Graviton17/Aadhaar-Crowd-Management",
+      "live": null,
+      "keyFeatures": [
+        "OCR-based Aadhaar card data extraction",
+        "Online slot booking system",
+        "Real-time queue management",
+        "Admin dashboard for center management",
+        "SMS notifications for appointment reminders",
+        "Role-based access control (RBAC)"
+      ],
+      "challenges": [
+        "Ensuring data privacy and security for PII",
+        "Implementing fair slot allocation algorithm",
+        "Designing for low digital literacy users"
+      ],
+      "learnings": [
+        "Privacy by design principles",
+        "Ethical considerations in civic tech",
+        "Real-time data synchronization",
+        "Accessible UI/UX design"
+      ]
+    },
+    {
+      "id": "curita-ai",
+      "title": "Curita - AI-Powered Interactive Toy",
+      "shortDescription": "ML-driven interactive toy with speech recognition and NLP",
+      "description": "An intelligent interactive toy that uses machine learning to engage with children through speech recognition, natural language processing, and personalized responses. Currently under development at INavLabs.",
+      "image": "https://placehold.co/800x600/8b5cf6/white?text=Curita+AI",
+      "technologies": [
+        "Python",
+        "TensorFlow",
+        "Scikit-Learn",
+        "NLP",
+        "Speech Recognition",
+        "Raspberry Pi"
+      ],
+      "category": "Machine Learning",
+      "featured": true,
+      "github": null,
+      "live": null,
+      "keyFeatures": [
+        "Speech recognition for voice commands",
+        "Natural language understanding",
+        "Personalized response generation",
+        "Adaptive learning based on user interactions",
+        "Emotion recognition from voice tone",
+        "Child-safe content filtering"
+      ],
+      "challenges": [
+        "Optimizing ML models for edge devices",
+        "Ensuring low-latency response times",
+        "Building child-appropriate conversational AI"
+      ],
+      "learnings": [
+        "Edge ML deployment strategies",
+        "Real-time audio processing",
+        "Reinforcement learning for adaptive systems",
+        "Ethical AI for children's products"
+      ]
+    },
+    {
+      "id": "leetcode-tracker",
+      "title": "LeetCode Progress Tracker",
+      "shortDescription": "Web app to track and visualize coding practice progress",
+      "description": "A personal dashboard to track LeetCode problem-solving progress with visualizations, statistics, and goal setting features.",
+      "image": "https://placehold.co/800x600/06b6d4/white?text=LeetCode+Tracker",
+      "technologies": [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Chart.js",
+        "LeetCode API"
+      ],
+      "category": "Full-Stack",
+      "featured": false,
+      "github": null,
+      "live": null,
+      "keyFeatures": [
+        "Automatic sync with LeetCode profile",
+        "Progress visualization with charts",
+        "Problem categorization by difficulty and topic",
+        "Daily/weekly goal tracking",
+        "Heat map of solving activity"
+      ]
+    },
+    {
+      "id": "portfolio",
+      "title": "Personal Portfolio Website",
+      "shortDescription": "Responsive portfolio website with modern design",
+      "description": "A fully responsive personal portfolio website showcasing projects, skills, and experience with modern UI/UX design patterns.",
+      "image": "https://placehold.co/800x600/f472b6/white?text=Portfolio",
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "TailwindCSS",
+        "Lucide Icons"
+      ],
+      "category": "Frontend",
+      "featured": false,
+      "github": "https://github.com/Ven-cy/Portfolio-Krish",
+      "live": null,
+      "keyFeatures": [
+        "Modular component architecture",
+        "Dark mode support",
+        "Smooth animations and transitions",
+        "SEO optimized",
+        "Fully responsive design"
+      ]
+    }
+  ]
+}

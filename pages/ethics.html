@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Awareness & Ethics - Krish Kalola</title>
+    <meta
+      name="description"
+      content="Ethical considerations and global awareness in technology - Krish Kalola's commitment to responsible engineering"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/css/theme.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/animations.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+  </head>
+  <body
+    class="bg-white dark:bg-gray-950 text-gray-900 dark:text-white transition-colors duration-300"
+  >
+    <!-- Header Component (dynamically loaded) -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main class="min-h-screen pt-20">
+      <!-- Ethics Section -->
+      <section
+        id="ethics"
+        class="min-h-screen py-24 px-4 sm:px-6 lg:px-8 flex items-center"
+      >
+        <div class="max-w-4xl mx-auto w-full">
+          <h1
+            class="text-5xl md:text-6xl font-extrabold text-gray-900 dark:text-white mb-12 text-center bg-gradient-to-r from-primary-600 to-purple-600 dark:from-primary-400 dark:to-purple-400 bg-clip-text text-transparent"
+          >
+            Global Awareness & Ethics
+          </h1>
+
+          <div
+            class="glass-card p-8 md:p-12 space-y-8 text-lg text-gray-700 dark:text-gray-300"
+          >
+            <p class="text-xl leading-relaxed">
+              Building technology, especially for a diverse and global audience,
+              carries significant ethical weight. My work on the Aadhaar Crowd
+              Management System provided a direct case study in these
+              considerations.
+            </p>
+
+            <!-- Case Study Section -->
+            <div class="mt-10">
+              <div class="flex items-center gap-4 mb-6">
+                <div
+                  class="w-14 h-14 rounded-xl bg-gradient-to-br from-primary-500 to-purple-600 flex items-center justify-center shadow-lg"
+                >
+                  <i data-lucide="shield-check" class="w-7 h-7 text-white"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white">
+                  Case Study: Data Privacy in Civic Tech
+                </h2>
+              </div>
+
+              <p class="mb-6 leading-relaxed">
+                The Aadhaar system, by definition, handles Personally
+                Identifiable Information (PII). This presented several ethical
+                dilemmas:
+              </p>
+
+              <!-- Ethical Dilemmas -->
+              <div class="space-y-6 mt-8">
+                <!-- Data Security vs. Usability -->
+                <div
+                  class="border-l-4 border-primary-500 pl-6 py-4 bg-gradient-to-r from-primary-50 to-transparent dark:from-primary-950 dark:to-transparent rounded-r-lg"
+                >
+                  <h3
+                    class="text-xl font-bold text-primary-600 dark:text-primary-400 mb-3 flex items-center gap-3"
+                  >
+                    <i data-lucide="lock" class="w-6 h-6"></i>
+                    Data Security vs. Usability
+                  </h3>
+                  <p class="leading-relaxed">
+                    We needed to secure user data with JWTs and robust
+                    authentication, but the system also had to be accessible to
+                    administrators. We implemented role-based access control
+                    (RBAC) to ensure administrators could only see the minimum
+                    data necessary (e.g., appointment time, not full user
+                    details).
+                  </p>
+                </div>
+
+                <!-- Digital Inclusion -->
+                <div
+                  class="border-l-4 border-purple-500 pl-6 py-4 bg-gradient-to-r from-purple-50 to-transparent dark:from-purple-950 dark:to-transparent rounded-r-lg"
+                >
+                  <h3
+                    class="text-xl font-bold text-purple-600 dark:text-purple-400 mb-3 flex items-center gap-3"
+                  >
+                    <i data-lucide="users" class="w-6 h-6"></i>
+                    Digital Inclusion
+                  </h3>
+                  <p class="leading-relaxed">
+                    A significant portion of the user base in India may have low
+                    digital literacy or limited internet access. This global
+                    issue framed our design. While our solution was web-based,
+                    we discussed a parallel SMS-based booking system as a future
+                    iteration to ensure equitable access for those without
+                    smartphones.
+                  </p>
+                </div>
+
+                <!-- Algorithmic Fairness -->
+                <div
+                  class="border-l-4 border-blue-500 pl-6 py-4 bg-gradient-to-r from-blue-50 to-transparent dark:from-blue-950 dark:to-transparent rounded-r-lg"
+                >
+                  <h3
+                    class="text-xl font-bold text-blue-600 dark:text-blue-400 mb-3 flex items-center gap-3"
+                  >
+                    <i data-lucide="scale" class="w-6 h-6"></i>
+                    Algorithmic Fairness
+                  </h3>
+                  <p class="leading-relaxed">
+                    The slot-booking algorithm itself had to be fair. We
+                    consciously avoided any logic that could be "gamed" or
+                    prioritize users from certain locations, opting for a
+                    transparent, first-come-first-served model for all available
+                    slots.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Personal Reflection Section -->
+            <div
+              class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700"
+            >
+              <div class="flex items-center gap-4 mb-6">
+                <div
+                  class="w-14 h-14 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center shadow-lg"
+                >
+                  <i data-lucide="heart" class="w-7 h-7 text-white"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white">
+                  Personal Reflection
+                </h2>
+              </div>
+
+              <div
+                class="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 p-8 rounded-2xl shadow-inner border border-gray-200 dark:border-gray-700"
+              >
+                <p
+                  class="text-xl leading-relaxed italic text-gray-800 dark:text-gray-200"
+                >
+                  "This project solidified my belief that an engineer's
+                  responsibility extends beyond writing functional code. We are
+                  architects of systems that can either perpetuate or mitigate
+                  societal inequalities. This experience has committed me to
+                  championing principles like
+                  <span class="font-bold text-primary-600 dark:text-primary-400"
+                    >privacy by design</span
+                  >
+                  and
+                  <span class="font-bold text-purple-600 dark:text-purple-400"
+                    >equitable access</span
+                  >
+                  in all my future work."
+                </p>
+              </div>
+            </div>
+
+            <!-- Core Principles -->
+            <div class="mt-12">
+              <h2
+                class="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center"
+              >
+                Core Ethical Principles
+              </h2>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Privacy by Design -->
+                <div
+                  class="glass-card p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                >
+                  <div
+                    class="w-12 h-12 rounded-full bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center mb-4 shadow-lg"
+                  >
+                    <i data-lucide="shield" class="w-6 h-6 text-white"></i>
+                  </div>
+                  <h3
+                    class="text-xl font-bold text-gray-900 dark:text-white mb-3"
+                  >
+                    Privacy by Design
+                  </h3>
+                  <p class="text-gray-700 dark:text-gray-300">
+                    Embedding privacy considerations from the inception of every
+                    system, not as an afterthought.
+                  </p>
+                </div>
+
+                <!-- Equitable Access -->
+                <div
+                  class="glass-card p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                >
+                  <div
+                    class="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center mb-4 shadow-lg"
+                  >
+                    <i data-lucide="globe" class="w-6 h-6 text-white"></i>
+                  </div>
+                  <h3
+                    class="text-xl font-bold text-gray-900 dark:text-white mb-3"
+                  >
+                    Equitable Access
+                  </h3>
+                  <p class="text-gray-700 dark:text-gray-300">
+                    Ensuring technology serves all communities, regardless of
+                    digital literacy or socioeconomic status.
+                  </p>
+                </div>
+
+                <!-- Algorithmic Transparency -->
+                <div
+                  class="glass-card p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                >
+                  <div
+                    class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center mb-4 shadow-lg"
+                  >
+                    <i data-lucide="eye" class="w-6 h-6 text-white"></i>
+                  </div>
+                  <h3
+                    class="text-xl font-bold text-gray-900 dark:text-white mb-3"
+                  >
+                    Algorithmic Transparency
+                  </h3>
+                  <p class="text-gray-700 dark:text-gray-300">
+                    Building systems where decision-making processes are
+                    understandable and auditable.
+                  </p>
+                </div>
+
+                <!-- Responsible Innovation -->
+                <div
+                  class="glass-card p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                >
+                  <div
+                    class="w-12 h-12 rounded-full bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center mb-4 shadow-lg"
+                  >
+                    <i data-lucide="leaf" class="w-6 h-6 text-white"></i>
+                  </div>
+                  <h3
+                    class="text-xl font-bold text-gray-900 dark:text-white mb-3"
+                  >
+                    Responsible Innovation
+                  </h3>
+                  <p class="text-gray-700 dark:text-gray-300">
+                    Considering long-term societal impacts and unintended
+                    consequences of technological solutions.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Commitment Statement -->
+            <div
+              class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700"
+            >
+              <div
+                class="bg-gradient-to-r from-primary-600 to-purple-600 dark:from-primary-500 dark:to-purple-500 p-8 rounded-2xl text-white shadow-2xl"
+              >
+                <div class="flex items-start gap-4 mb-4">
+                  <i
+                    data-lucide="bookmark"
+                    class="w-8 h-8 flex-shrink-0 mt-1"
+                  ></i>
+                  <div>
+                    <h3 class="text-2xl font-bold mb-4">My Commitment</h3>
+                    <p class="text-lg leading-relaxed opacity-95">
+                      As I progress in my career, I commit to continuously
+                      questioning the ethical implications of my work,
+                      advocating for user privacy and data protection, and
+                      building technology that empowers rather than marginalizes
+                      communities. Technology is a powerful force—I aim to wield
+                      it responsibly.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Component (dynamically loaded) -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JavaScript -->
+    <script src="/js/componentLoader.js"></script>
+    <script src="/js/theme.js"></script>
+    <script src="/js/navigation.js"></script>
+
+    <script>
+      // Initialize Lucide icons
+      lucide.createIcons();
+
+      // Re-initialize after component loading
+      document.addEventListener("DOMContentLoaded", () => {
+        setTimeout(() => {
+          lucide.createIcons();
+        }, 200);
+      });
+    </script>
+  </body>
+</html>
