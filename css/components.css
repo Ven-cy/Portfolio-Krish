@@ -413,6 +413,41 @@
 }
 
 /* =====================
+   Testimonial Components
+   ===================== */
+
+/* Testimonial cards */
+.testimonial-card {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+.testimonial-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-500), var(--primary-400));
+  border-radius: 0 0 1.5rem 1.5rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.testimonial-card:hover::after {
+  opacity: 1;
+}
+
+.dark .testimonial-card::after {
+  background: linear-gradient(90deg, var(--primary-400), var(--primary-300));
+}
+
+/* =====================
    Project Components
    ===================== */
 
